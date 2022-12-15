@@ -11,12 +11,33 @@
 .foto5,
 .foto6,
 .foto7,
-.foto8{
-
+.foto8,
+.foto9,
+.foto10,
+.foto11{
   width: 320px;
   border-radius: 10px;
   margin-top: 5px;
   padding: 5px;
+  transition: .3s;
+
+}
+
+
+
+.foto1:hover,
+.foto2:hover,
+.foto3:hover,
+.foto4:hover,
+.foto5:hover,
+.foto6:hover,
+.foto7:hover,
+.foto8:hover,
+.foto9:hover,
+.foto10:hover,
+.foto11:hover{
+  transform:scale(1.03);
+  filter: brightness(70%);
 
 }
 
@@ -25,7 +46,7 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    height: 200vh;
+    height: 202vh;
     width: min-content;
    align-content: center;
     margin: 40px auto;
