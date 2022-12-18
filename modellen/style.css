@@ -4,17 +4,7 @@
   padding: 0;
 }
 
-.foto1,
-.foto2,
-.foto3,
-.foto4,
-.foto5,
-.foto6,
-.foto7,
-.foto8,
-.foto9,
-.foto10,
-.foto11{
+.foto1{
   width: 320px;
   border-radius: 10px;
   margin-top: 5px;
@@ -25,17 +15,7 @@
 
 
 
-.foto1:hover,
-.foto2:hover,
-.foto3:hover,
-.foto4:hover,
-.foto5:hover,
-.foto6:hover,
-.foto7:hover,
-.foto8:hover,
-.foto9:hover,
-.foto10:hover,
-.foto11:hover{
+.foto1:hover{
   transform:scale(1.03);
   filter: brightness(70%);
 
@@ -53,7 +33,72 @@
  
   }
 
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */ 
+   padding-top: 30px;
+   display: grid;
+}
+
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+
+  display: grid;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+
+
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.4s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
   
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
  
 .pagina2{
     height: 300px;
@@ -111,3 +156,22 @@ footer p{
   padding-top: 5px;
 
 }
+
+@media only screen and (max-width: 1024px){
+  .container{
+    height: 337vh;
+  }
+
+
+
+  }
+
+  @media only screen and (max-width: 750px){
+    .container{
+      height: 337vh;
+     
+    }
+  
+  
+  
+    }
