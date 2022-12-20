@@ -1,4 +1,3 @@
-
 var modal = document.getElementById("myModal");
 
 
@@ -12,8 +11,6 @@ span.onclick = function() {
 }
 
 var img = document.getElementById("myImg1");
-
-
 
 img.onclick = function(){
   modal.style.display = "block";
@@ -93,4 +90,5 @@ img.onclick = function(){
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
 }
+
 
